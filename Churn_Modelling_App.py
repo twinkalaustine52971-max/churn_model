@@ -1,202 +1,39 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "156b2095-9577-42b5-b73b-b6292d246068",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2026-07-12 20:02:35.022 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:35.025 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.714 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run C:\\Users\\ARTI\\anaconda3\\Lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
-      "2026-07-12 20:02:36.717 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.721 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.725 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.730 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.732 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.736 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.739 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.742 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.744 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.746 Session state does not function when running a script without `streamlit run`\n",
-      "2026-07-12 20:02:36.749 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.751 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.755 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.757 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.759 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.762 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.765 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.767 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.770 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.772 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.774 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.776 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.778 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.780 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.783 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.785 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.786 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.789 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.792 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.795 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.797 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.799 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.801 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.802 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.804 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.807 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.809 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.812 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.814 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.815 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.817 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.819 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.821 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.822 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.824 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.825 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.827 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.831 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.835 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.837 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.839 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.841 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.843 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.844 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.848 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.850 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.852 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.853 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.854 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.856 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.857 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.859 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.862 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.863 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.865 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.867 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.868 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.872 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.874 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.876 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.878 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.880 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.882 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.884 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.888 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.891 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.895 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.898 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.900 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.905 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.907 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-07-12 20:02:36.910 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
-     ]
-    }
-   ],
-   "source": [
-    "import streamlit as st\n",
-    "import pickle\n",
-    "import numpy as np\n",
-    "\n",
-    "# Load Model\n",
-    "with open(\"churn_model.pkl\", \"rb\") as file:\n",
-    "    model = pickle.load(file)\n",
-    "\n",
-    "st.set_page_config(page_title=\"Customer Churn Prediction\")\n",
-    "\n",
-    "st.title(\"Customer Churn Prediction\")\n",
-    "st.write(\"Predict whether a customer will leave the bank or not.\")\n",
-    "\n",
-    "# Inputs\n",
-    "credit_score = st.number_input(\"Credit Score\", 300, 900, 650)\n",
-    "\n",
-    "gender = st.selectbox(\"Gender\", [\"Male\", \"Female\"])\n",
-    "\n",
-    "age = st.number_input(\"Age\", 18, 100, 35)\n",
-    "\n",
-    "tenure = st.number_input(\"Tenure\", 0, 10, 5)\n",
-    "\n",
-    "balance = st.number_input(\"Balance\", 0.0, 300000.0, 50000.0)\n",
-    "\n",
-    "num_products = st.number_input(\"Number of Products\", 1, 4, 1)\n",
-    "\n",
-    "has_card = st.selectbox(\"Has Credit Card\", [0, 1])\n",
-    "\n",
-    "active_member = st.selectbox(\"Is Active Member\", [0, 1])\n",
-    "\n",
-    "salary = st.number_input(\"Estimated Salary\", 0.0, 300000.0, 50000.0)\n",
-    "\n",
-    "country = st.selectbox(\n",
-    "    \"Geography\",\n",
-    "    [\"France\", \"Germany\", \"Spain\"]\n",
-    ")\n",
-    "\n",
-    "# One-Hot Encoding\n",
-    "geo_germany = 1 if country == \"Germany\" else 0\n",
-    "geo_spain = 1 if country == \"Spain\" else 0\n",
-    "\n",
-    "# Gender Encoding\n",
-    "gender = 1 if gender == \"Male\" else 0\n",
-    "\n",
-    "if st.button(\"Predict\"):\n",
-    "\n",
-    "    data = np.array([[credit_score,\n",
-    "                      gender,\n",
-    "                      age,\n",
-    "                      tenure,\n",
-    "                      balance,\n",
-    "                      num_products,\n",
-    "                      has_card,\n",
-    "                      active_member,\n",
-    "                      salary,\n",
-    "                      geo_germany,\n",
-    "                      geo_spain]])\n",
-    "\n",
-    "    prediction = model.predict(data)[0]\n",
-    "\n",
-    "    if prediction == 1:\n",
-    "        st.error(\"Customer is likely to leave the bank.\")\n",
-    "    else:\n",
-    "        st.success(\"Customer is likely to stay with the bank.\")\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "4e70be4e-a36c-484a-b1de-2bd8b77925ad",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.9"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+import streamlit as st
+import pickle
+import joblib
+import numpy as np
+
+# Load compressed model
+with open("churn_model_compressed.pkl", "rb") as f:
+    model = joblib.load("Churn_Model_Compressed.pkl")
+
+st.title("Customer Churn Prediction")
+
+credit = st.number_input("Credit Score", 300, 900, 600)
+age = st.number_input("Age", 18, 100, 30)
+tenure = st.number_input("Tenure", 0, 10, 5)
+balance = st.number_input("Balance", 0.0, 300000.0, 50000.0)
+products = st.selectbox("Number of Products", [1, 2, 3, 4])
+card = st.selectbox("Has Credit Card", [0, 1])
+active = st.selectbox("Is Active Member", [0, 1])
+salary = st.number_input("Estimated Salary", 0.0, 300000.0, 50000.0)
+gender = st.selectbox("Gender", ["Female", "Male"])
+geo = st.selectbox("Geography", ["France", "Germany", "Spain"])
+
+# One-Hot Encoding
+gender = 1 if gender == "Male" else 0
+geo_france = 1 if geo == "France" else 0
+geo_germany = 1 if geo == "Germany" else 0
+geo_spain = 1 if geo == "Spain" else 0
+
+features = np.array([[credit, age, tenure, balance,
+                      products, card, active, salary,
+                      gender, geo_france, geo_germany, geo_spain]])
+
+if st.button("Predict"):
+    pred = model.predict(features)
+
+    if pred[0] == 1:
+        st.error("Customer is likely to Churn")
+    else:
+        st.success("Customer is likely to Stay")
